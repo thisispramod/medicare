@@ -38,7 +38,7 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.php" class="text-gray-600 hover:text-blue-700">Home</a>
-                    <a href="about.php" class="text-gray-600 hover:text-blue-700">About Us</a>
+                    <a href="about-us.php" class="text-gray-600 hover:text-blue-700">About Us</a>
                     <a href="products.php" class="text-gray-600 hover:text-blue-700">Products</a>
                     <a href="contact.php" class="text-blue-900 hover:text-blue-700 font-semibold">Contact</a>
                 </div>
@@ -52,7 +52,7 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu hidden md:hidden">
             <a href="index.php" class="block py-2 px-4 text-sm hover:bg-blue-100">Home</a>
-            <a href="about.php" class="block py-2 px-4 text-sm hover:bg-blue-100">About Us</a>
+            <a href="about-us.php" class="block py-2 px-4 text-sm hover:bg-blue-100">About Us</a>
             <a href="products.php" class="block py-2 px-4 text-sm hover:bg-blue-100">Products</a>
             <a href="contact.php" class="block py-2 px-4 text-sm hover:bg-blue-100">Contact</a>
         </div>

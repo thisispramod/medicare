@@ -13,7 +13,7 @@ if(isset($_POST['submit'])) {
     if($status == 1) {
         $obj->query("UPDATE announcements SET status = 0");
     }
-    $f = array('message', 'status', 'bg_color', 'text_color');
+    $f = array('announcement_text', 'status', 'bg_color', 'text_color');
     $v = array($message, $status, $bg_color, $text_color);
     $insert = $obj->insert('announcements', $f , $v);
     if($insert) {
@@ -127,7 +127,7 @@ $results = $obj->rows();
                             <?php foreach($results as $row){ ?>
                             <tr>
                                 <td class="px-6 py-4 whitespace-normal text-sm text-gray-900">
-                                    <?php echo htmlspecialchars($row['message']); ?>
+                                    <?php echo htmlspecialchars($row['announcement_text']); ?>
                                 </td>
                                 <td class="px-6 py-4">
                                     <div class="p-2 rounded" style="background-color: <?php echo $row['bg_color']; ?>; color: <?php echo $row['text_color']; ?>">

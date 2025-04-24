@@ -10,7 +10,7 @@
                     <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="index.php" class="text-blue-200 hover:text-white">Home</a></li>
-                        <li><a href="about.php" class="text-blue-200 hover:text-white">About Us</a></li>
+                        <li><a href="about-us.php" class="text-blue-200 hover:text-white">About Us</a></li>
                         <li><a href="products.php" class="text-blue-200 hover:text-white">Products</a></li>
                         <li><a href="contact.php" class="text-blue-200 hover:text-white">Contact</a></li>
                     </ul>
