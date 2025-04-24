@@ -12,7 +12,11 @@ $obj = new database();
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+       <!-- Add this in your HTML head --> 
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <style>
         @keyframes slideIn {
@@ -32,6 +36,31 @@ $obj = new database();
         .announcement-bar:hover .announcement-content {
             animation-play-state: paused;
         }
+
+        .slick-dots {
+            display: flex !important;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .slick-dots li {
+            list-style: none;
+        }
+
+        .slick-dots li button {
+            font-size: 0; /* hides the number */
+            width: 12px;
+            height: 12px;
+            border-radius: 9999px;
+            background-color: #a0aec0; /* gray-400 */
+            transition: background-color 0.3s ease;
+        }
+
+        .slick-dots li.slick-active button {
+            background-color: #3b82f6; /* blue-500 */
+        }
+        
     </style>
 </head>
 <body>
@@ -76,6 +105,7 @@ $obj = new database();
                 <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/917985534932" class="hover:text-blue-200 text-2xl" ><i class="fab fa-whatsapp text-green-400"></i></a>
                 <button id="themeToggle" class="theme-toggle">
                     <i class="fas fa-moon theme-icon-dark"></i>
                     <i class="fas fa-sun theme-icon-light"></i>
@@ -156,30 +186,8 @@ $obj = new database();
         <div class="swiper-button-next text-white"></div>
         <div class="swiper-button-prev text-white"></div>
         <div class="swiper-pagination"></div>
-    </div>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        new Swiper('.swiper-container', {
-            loop: true,
-            effect: 'fade',
-            speed: 1000,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    });
-    </script>
-
+    </div> 
+ 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-12">
         <!-- Services Section -->
@@ -203,8 +211,40 @@ $obj = new database();
                 </div>
             </div>
         </section>
-    </main>
 
+         <!-- Carousel Section -->
+        <section class="bg-white text-gray-800 py-12 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="testimonial-slider">
+            
+            <!-- Slide 1 -->
+            <div class="text-center px-6">
+                <div class="text-6xl text-indigo-400">“</div>
+                <h3 class="text-gray-600 font-semibold">Deepanshu Shukla</h3>
+                <div class="text-yellow-400 mb-2">★★★★★</div>
+                <p class="text-gray-600">
+                We were rated among the ‘Most Trusted Brands in 2016’ by World Consulting and Research Corporation
+                </p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="text-center px-6">
+                <div class="text-6xl text-indigo-400">“</div>
+                <h3 class="text-gray-600 font-semibold">Anjali Verma</h3>
+                <div class="text-yellow-400 mb-2">★★★★★</div>
+                <p class="text-gray-600">
+                Amazing customer service and reliable medicine delivery. I highly recommend them!
+                </p>
+            </div>
+
+            <!-- Add more slides as needed --> 
+            </div>
+        </div>
+        </section>
+
+        
+        
+    </main> 
     <?php
     include_once('components/footer.php')
     ?>
@@ -222,6 +262,44 @@ $obj = new database();
             }
         });
     </script>
+    
+<!-- Slick Init Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        new Swiper('.swiper-container', {
+            loop: true,
+            effect: 'fade',
+            speed: 1000,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    });
+    </script>
+<script>
+  $(document).ready(function(){
+    $('.testimonial-slider').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true,
+      infinite: true,
+      speed: 600,
+      fade: true,
+      cssEase: 'linear'
+    });
+  });
+</script>
+
     <script src="js/theme.js"></script>
 </body>
 </html>

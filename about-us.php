@@ -108,6 +108,7 @@ $obj = new database();
                 <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/917985534932" class="hover:text-blue-200 text-2xl" ><i class="fab fa-whatsapp text-green-400"></i></a>
                 <button id="themeToggle" class="theme-toggle">
                     <i class="fas fa-moon theme-icon-dark"></i>
                     <i class="fas fa-sun theme-icon-light"></i>
@@ -204,10 +205,11 @@ $obj = new database();
   <div class="culture-slider">
     <div><img src="images/slider/about-us-img.png" width="50%" hight="50%" alt="Team 1" class="rounded shadow mx-auto" /></div>
     <div><img src="images/slider/about-us-img-1.png" width="50%" hight="50%" alt="Team 2" class="rounded shadow mx-auto" /></div>
-    <div><img src="images/slider/about-us-img.png" width="50%" hight="50%" alt="Team 3" class="rounded shadow mx-auto" /></div>
+    <div><img src="images/slider/about-us-img-2.png" width="50%" hight="50%" alt="Team 3" class="rounded shadow mx-auto" /></div>
     <div><img src="images/slider/about-us-img.png" width="50%" hight="50%" alt="Team 4" class="rounded shadow mx-auto" /></div>
   </div>
 </section>
+
 <?php
     include_once('components/footer.php')
     ?>

@@ -21,6 +21,7 @@
                 <a href="#" class="hover:text-blue-200"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="hover:text-blue-200"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="hover:text-blue-200"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/917985534932" class="hover:text-blue-200 text-2xl" ><i class="fab fa-whatsapp text-green-400"></i></a>
                 <button id="themeToggle" class="theme-toggle">
                     <i class="fas fa-moon theme-icon-dark"></i>
                     <i class="fas fa-sun theme-icon-light"></i>
@@ -67,13 +68,13 @@
             <button class="category-btn active bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700" data-category="all">
                 All Products
             </button>
-            <button class="category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-700 hover:text-white" data-category="equipment">
+            <button class="category-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full hover:bg-blue-700 hover:text-white" data-category="equipment">
                 Medical Equipment
             </button>
-            <button class="category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-700 hover:text-white" data-category="supplies">
+            <button class="category-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full hover:bg-blue-700 hover:text-white" data-category="supplies">
                 Medical Supplies
             </button>
-            <button class="category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-700 hover:text-white" data-category="medicines">
+            <button class="category-btn bg-gray-200 text-gray-800 px-6 py-2 rounded-full hover:bg-blue-700 hover:text-white" data-category="medicines">
                 Medicines
             </button>
         </div>
